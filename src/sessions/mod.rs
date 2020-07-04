@@ -68,7 +68,7 @@ impl StreamMetadata {
         }
     }
 
-    fn apply_metadata_values(&mut self, mut properties: HashMap<String, Amf0Value>) {
+    pub fn apply_metadata_values(&mut self, mut properties: HashMap<String, Amf0Value>) {
         for (key, value) in properties.drain() {
             match key.as_ref() {
                 "width" => match value.get_number() {
