@@ -52,7 +52,7 @@ pub struct StreamMetadata {
 
 impl StreamMetadata {
     /// Creates a new (and empty) metadata instance
-    fn new() -> StreamMetadata {
+    pub fn new() -> StreamMetadata {
         StreamMetadata {
             video_width: None,
             video_height: None,
