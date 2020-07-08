@@ -1,5 +1,6 @@
 use super::PublishMode;
 
+#[derive(Debug)]
 pub enum OutstandingRequest {
     ConnectionRequest {
         app_name: String,

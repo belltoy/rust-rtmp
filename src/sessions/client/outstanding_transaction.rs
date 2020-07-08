@@ -1,5 +1,6 @@
 use super::PublishRequestType;
 
+#[derive(Debug)]
 pub enum TransactionPurpose {
     PlayRequest {
         stream_key: String,
@@ -11,6 +12,7 @@ pub enum TransactionPurpose {
     }
 }
 
+#[derive(Debug)]
 pub enum OutstandingTransaction {
     ConnectionRequested {
         app_name: String,

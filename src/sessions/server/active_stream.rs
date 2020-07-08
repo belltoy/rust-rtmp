@@ -1,5 +1,6 @@
 use super::PublishMode;
 
+#[derive(Debug)]
 pub enum StreamState {
     Created,
 

@@ -1,5 +1,5 @@
 /// Configuration options that govern how a RTMP client session should operate
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct ClientSessionConfig {
     pub flash_version: String,
     pub playback_buffer_length_ms: u32,

@@ -1,6 +1,6 @@
 
 /// The configuration options that govern how a RTMP server session should operate
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct ServerSessionConfig {
     pub fms_version: String,
     pub chunk_size: u32,
